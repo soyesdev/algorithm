@@ -18,4 +18,14 @@ public class Solution {
         }
         return count;
     }
+
+    public int numJewelsInStones2(String jewels, String stones) {
+        int count = 0;
+        for (int i =0; i < stones.length(); i++) {
+            if (jewels.indexOf(stones.charAt(i)) > -1) {
+                count += 1;
+            }
+        }
+        return count;
+    }
 }
